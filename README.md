@@ -15,5 +15,4 @@
 - Staging.CVC_JobSpecData
 - Staging.CVC_JobCostData
 
-
-### ![CVC_ERD] ()
+### ![CVC_ERD](https://github.com/ScottyMacCVC/School_District_Analysis/blob/main/Resources/Math%20and%20reading%20scores%20by%20grade.JPG)
