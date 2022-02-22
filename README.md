@@ -18,25 +18,29 @@
 ### ![CVC_ERD](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/CVC%20ERD%20for%20Estimating%20Universe.png)
 
 
+ERD INFO for quickDBD
+
 CVC_ContractInformationData
 -
 JobNo Varchar pk fk - CVC_JobCostData.JobNo
-SubJobNo PK Varchar pk fk - CVC_JobCostData.SubJobNo
+SubJobNo Varchar pk fk - CVC_JobCostData.SubJobNo
+Contract varchar FK >- CVC_LegalData.ContractRevision
 
 CVC_JobInfoData
 -
-JobNo PK Varchar pk fk - CVC_JobCostData.JobNo
+JobNo Varchar pk fk - CVC_JobCostData.JobNo
 
 CVC_LegalData
 ----
-JobNo PK Varchar pk fk - CVC_JobCostData.JobNo
+JobNo Varchar pk fk - CVC_JobCostData.JobNo
+ContractRevision fk Varchar-CVC_ContractInformationData.Contract
 
 CVC_JobSpecData
 ----
-JobNo PK Varchar pk fk - CVC_JobCostData.JobNo
-SubJobNo PK Varchar pk fk - CVC_JobCostData.SubJobNo
+JobNo Varchar pk fk - CVC_JobCostData.JobNo
+SubJobNo Varchar pk fk - CVC_JobCostData.SubJobNo
 
 CVC_JobCostData
 ----
-JobNo PK Varchar
-SubJobNo PK Varchar pk
+JobNo Varchar
+SubJobNo Varchar pk
