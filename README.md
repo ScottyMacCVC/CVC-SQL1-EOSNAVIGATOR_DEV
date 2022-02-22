@@ -16,3 +16,27 @@
 - Staging.CVC_JobCostData
 
 ### ![CVC_ERD](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/CVC%20ERD%20for%20Estimating%20Universe.png)
+
+
+CVC_ContractInformationData
+-
+JobNo Varchar pk fk - CVC_JobCostData.JobNo
+SubJobNo PK Varchar pk fk - CVC_JobCostData.SubJobNo
+
+CVC_JobInfoData
+-
+JobNo PK Varchar pk fk - CVC_JobCostData.JobNo
+
+CVC_LegalData
+----
+JobNo PK Varchar pk fk - CVC_JobCostData.JobNo
+
+CVC_JobSpecData
+----
+JobNo PK Varchar pk fk - CVC_JobCostData.JobNo
+SubJobNo PK Varchar pk fk - CVC_JobCostData.SubJobNo
+
+CVC_JobCostData
+----
+JobNo PK Varchar
+SubJobNo PK Varchar pk
