@@ -266,9 +266,13 @@ Staging.CVC_JobCostData
 [Plan_Name] [varchar](20) NULL,
 [Plan_ElvOpt] [varchar](20) NULL,
 [Contract_Price] [decimal](12, 0) NULL,
+[Name_Add_For_1] [varchar](20) NULL,
 [Add_For_1] [decimal](12, 0) NULL,
+[Name_Add_For_2] [varchar](20) NULL,
 [Add_For_2] [decimal](12, 0) NULL,
+[Name_Add_For_3] [varchar](20) NULL,
 [Add_For_3] [decimal](12, 0) NULL,
+[Name_Add_For_4] [varchar](20) NULL,
 [Add_For_4] [decimal](12, 0) NULL,
 [Adjusted Total] [decimal](12, 0) NULL,
 
