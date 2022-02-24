@@ -1,4 +1,4 @@
-[Staging].[CVC_Contracts](
+[Staging].[CVC_START](
 [PK] [int] IDENTITY(1,1) NOT NULL,
 [Builder] [varchar](20) NOT NULL,
 [Project] [varchar](20) NOT NULL,
