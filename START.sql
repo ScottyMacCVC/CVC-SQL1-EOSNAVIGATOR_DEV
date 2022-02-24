@@ -1,3 +1,5 @@
+-- Built for CVC START
+
 [Staging].[CVC_START](
 [PK] [int] IDENTITY(1,1) NOT NULL,
 [Builder] [varchar](20) NOT NULL,

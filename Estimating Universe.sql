@@ -3,13 +3,15 @@
 Server\instance: CVC-SQL1\EOSNAVIGATOR_DEV
 Database: Navigator
 Tables: 
-Staging.CVC_ContractInformationData
+Staging.CVC ContractInformationData
 Staging.CVC_JobInfoData
 Staging.CVC_LegalData
 Staging.CVC_JobSpecData
 Staging.CVC_JobCostData
 
 Below 3 tables doesn't have any data in the DB tables.
+
+
 
 Staging.CVC_LegalData
 Staging.CVC_JobSpecData
@@ -29,7 +31,6 @@ Staging.CVC_JobCostData
 [Contract] [varchar](2) NULL,
 [ItemNumber] [varchar](15) NULL,
 [Plan] [varchar](20) NULL,
-[Plan_ELV] [varchar](20) NULL,
 [Address] [varchar](20) NULL,
 [EffectiveDate] [varchar](8) NULL,
 [ContractAmount] [decimal](12, 2) NULL,
@@ -243,3 +244,152 @@ Staging.CVC_JobCostData
 [AddBillingInstructions] [bit] NULL,
 [PublishBy] [varchar](100) NULL,
 [PublishDate] [datetime] NULL,
+
+
+-- Added Tables Below, Keith & Scott Add
+
+-- Built for CVC START
+
+[Staging].[CVC_START](
+[PK] [int] IDENTITY(1,1) NOT NULL,
+[Builder] [varchar](20) NOT NULL,
+[Project] [varchar](20) NOT NULL,
+[JobCo] [varchar](6) NULL,
+[Lots] [varchar](8) NULL,
+[Slab_Type] [varchar](20) NULL,
+[Company_No] [varchar](10) NULL,
+[SubJobCo] [varchar](3) NULL,
+--[Lookup] [int] NOT NULL, GREG PLEASE FIX THIS ONE
+[Lot_No] [varchar](10) NULL,
+[Address] [varchar](10) NULL,
+[Garage Orientation] [varchar](10) NULL,
+[Plan_Name] [varchar](20) NULL,
+[Plan_ElvOpt] [varchar](20) NULL,
+[Contract_Price] [decimal](12, 0) NULL,
+[Add_For_1] [decimal](12, 0) NULL,
+[Add_For_2] [decimal](12, 0) NULL,
+[Add_For_3] [decimal](12, 0) NULL,
+[Add_For_4] [decimal](12, 0) NULL,
+[Adjusted Total] [decimal](12, 0) NULL,
+
+
+
+-- Staging Table for Contract Input History Mockup
+
+[Staging].[CVC_Contracts](
+[PK] [int] IDENTITY(1,1) NOT NULL,
+[CVC_Contracts_PK] [int] NOT NULL,
+[Contract_No] [varchar](3) NOT NULL,
+[JobNo] [varchar](6) NULL,
+[Contract_Description] [varchar](20) NULL,
+[Contract_Date] [varchar](10) NULL,
+[Builder_Eff_Release] [varchar](3) NULL,
+[Eff Date] [varchar](10) NULL,
+[Estimate_PK] [int] NOT NULL,
+--[Lookup] [int] NOT NULL, GREG PLEASE FIX THIS ONE
+[Plan_Name] [varchar](20) NULL,
+[ELV_OPT] [varchar](20) NULL,
+[Identifying_Notes] [varchar](20) NULL,
+[Footprint_SF] [decimal](12, 0) NULL,
+[Labor_MH] [decimal](12, 0) NULL,
+[Concrete_CY] [decimal](12, 0) NULL,
+[Rock_TN] [decimal](12, 0) NULL,
+[Steel_LBS] [decimal](12, 0) NULL,
+[PT_Cable_LF] [decimal](12, 0) NULL,
+[Pumping_CY] [decimal](12, 0) NULL,
+[Lumber_BF] [decimal](12, 0) NULL,
+[Sage_Estimate_Amount] [decimal](12, 2) NULL,
+[RFA_Amount] [decimal](12, 2) NULL,
+[Proposal_Amount] [decimal](12, 2) NULL,
+[Draw_1] [decimal](12, 2) NULL,
+[Draw_2] [decimal](12, 2) NULL,
+[Draw_3] [decimal](12, 2) NULL,
+[Draw_4] [decimal](12, 2) NULL,
+[OCIP_Amount] [varchar](20) NULL,
+[Contract_Amount] [decimal](12, 2) NULL,
+[Contract_vs_Proposal_Delta] [decimal](12, 2) NULL,
+[Delta_Variance_Percent] [varchar](8) NULL,
+[Created_by] [varchar](15) NULL,
+[Created date] [datetime] NULL,
+[Estimate_Name] [varchar](30) NULL,
+[Proposal_Name] [varchar](30) NULL,
+[Contract_File_Name] [varchar](30) NULL,
+[Notes] [varchar](30) NULL,
+
+
+
+-- Created for the Request for Addendum (RFA)
+
+[Staging].[CVC_RFA](
+[PK] [int] IDENTITY(1,1) NOT NULL,
+--[Lookup] [int] NOT NULL, GREG PLEASE FIX THIS ONE
+
+-- Base Info for Job Foundations (FND)
+[Builder] [varchar](20) NOT NULL,
+[Project] [varchar](20) NOT NULL,
+[JobCo] [varchar](6) NULL,
+[Contact] [varchar](20) NULL,
+[Lots] [varchar](8) NULL,
+[Proposal_REV] [varchar](8) NULL,
+
+-- Info for Foundation Plans (FND)
+[FND_Plan_Name] [varchar](20) NULL,
+[FND_Plan_ElvOpt] [varchar](20) NULL,
+
+-- Increase Quantities & Units for Foundations (FND)
+[Increase_Dollar_per_hour] [decimal](6, 2) NULL,
+[Hours_per_plan] [decimal](8, 0) NULL,
+[Increase_Dollar_per_CY] [decimal](6, 2) NULL,
+[CY_per_plan] [decimal](8, 0) NULL,
+[Increase_Dollar_per_RockTN] [decimal](6, 2) NULL,
+[RockTN_per_plan] [decimal](8, 0) NULL,
+[Increase_Dollar_per_SteelTN] [decimal](6, 2) NULL,
+[SteelTN_per_plan] [decimal](8, 0) NULL,
+[Increase_Dollar_per_PT_Cable_LF] [decimal](6, 2) NULL,
+[PT_Cable_LF_per_plan] [decimal](8, 0) NULL,
+[Increase_Dollar_per_Pump_CY] [decimal](6, 2) NULL,
+-- [Pump_CY_per_plan] [decimal](8, 0) NULL, USES [CY_per_plan]
+
+-- Contract Info for RFA Foundations (FND)
+[FND_Contract_Price] [decimal](12, 0) NULL,
+[FND_Requested_Increase] [decimal](12, 0) NULL,
+[FND_Total] [decimal](12, 0) NULL,
+
+
+-- Info for Flatwork Plans (FLT)
+[FW_Plan_Name] [varchar](20) NULL,
+[FW_Plan_ElvOpt] [varchar](20) NULL,
+
+-- Increase Quantities & Units for Flatwork (FLT)
+[Increase_Dollar_per_SF_DW] [decimal](6, 2) NULL,
+[FLT_Item_DW] [decimal](8, 0) NULL,
+[Increase_Dollar_per_Front_Walk] [decimal](6, 2) NULL,
+[FLT_Item_Front_walk] [decimal](8, 0) NULL,
+[Increase_Dollar_per_Porch] [decimal](6, 2) NULL,
+[FLT_Item_Porch] [decimal](8, 0) NULL,
+[Increase_Dollar_per_Stoop] [decimal](6, 2) NULL,
+[FLT_Item_Stoop] [decimal](8, 0) NULL,
+[Increase_Dollar_per_Patio] [decimal](6, 2) NULL,
+[FLT_Item_Patio] [decimal](8, 0) NULL,
+[Increase_Dollar_per_Service_Walk] [decimal](6, 2) NULL,
+[FLT_Item_Service_Walk] [decimal](8, 0) NULL,
+[Increase_Dollar_per_Approach] [decimal](6, 2) NULL,
+[FLT_Item_Approach] [decimal](8, 0) NULL,
+[Increase_Dollar_per_City_Walk] [decimal](6, 2) NULL,
+[FLT_Item_City_Walk] [decimal](8, 0) NULL,
+[Increase_Dollar_per_Steps] [decimal](6, 2) NULL,
+[FLT_Item_Steps] [decimal](8, 0) NULL,
+[Increase_Dollar_per_FW_VarItem1] [decimal](6, 2) NULL,
+[FLT_Item_FW_VarItem1] [decimal](8, 0) NULL,
+[Increase_Dollar_per_FW_VarItem2] [decimal](6, 2) NULL,
+[FLT_Item_FW_VarItem2] [decimal](8, 0) NULL,
+[Increase_Dollar_per_FW_VarItem3] [decimal](6, 2) NULL,
+[FLT_Item_FW_VarItem3] [decimal](8, 0) NULL,
+[Increase_Dollar_per_FW_VarItem4] [decimal](6, 2) NULL,
+[FLT_Item_FW_VarItem4] [decimal](8, 0) NULL,
+
+
+-- Contract Info for RFA Flatwork/Pavers (FLT)
+[FLT_Contract_Price] [decimal](12, 0) NULL,
+[FLT_Requested_Increase] [decimal](12, 0) NULL,
+[FLT_Total] [decimal](12, 0) NULL,
