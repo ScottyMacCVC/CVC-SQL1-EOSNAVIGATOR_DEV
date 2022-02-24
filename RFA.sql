@@ -16,17 +16,17 @@
 [FND_Plan_ElvOpt] [varchar](20) NULL,
 
 -- Increase Quantities & Units for Foundations (FND)
-[Increase_Dollar_per_hour] [decimal](6, 2) NULL,
-[Hours_per_plan] [decimal](8, 0) NULL,
-[Increase_Dollar_per_CY] [decimal](6, 2) NULL,
-[CY_per_plan] [decimal](8, 0) NULL,
-[Increase_Dollar_per_RockTN] [decimal](6, 2) NULL,
-[RockTN_per_plan] [decimal](8, 0) NULL,
-[Increase_Dollar_per_SteelTN] [decimal](6, 2) NULL,
-[SteelTN_per_plan] [decimal](8, 0) NULL,
-[Increase_Dollar_per_PT_Cable_LF] [decimal](6, 2) NULL,
-[PT_Cable_LF_per_plan] [decimal](8, 0) NULL,
-[Increase_Dollar_per_Pump_CY] [decimal](6, 2) NULL,
+[FND_Increase_Dollar_per_hour] [decimal](6, 2) NULL,
+[FND_Hours_per_plan] [decimal](8, 0) NULL,
+[FND_Increase_Dollar_per_CY] [decimal](6, 2) NULL,
+[FND_CY_per_plan] [decimal](8, 0) NULL,
+[FND_Increase_Dollar_per_RockTN] [decimal](6, 2) NULL,
+[FND_RockTN_per_plan] [decimal](8, 0) NULL,
+[FND_Increase_Dollar_per_SteelTN] [decimal](6, 2) NULL,
+[FND_SteelTN_per_plan] [decimal](8, 0) NULL,
+[FND_Increase_Dollar_per_PT_Cable_LF] [decimal](6, 2) NULL,
+[FND_PT_Cable_LF_per_plan] [decimal](8, 0) NULL,
+[FND_Increase_Dollar_per_Pump_CY] [decimal](6, 2) NULL,
 -- [Pump_CY_per_plan] [decimal](8, 0) NULL, USES [CY_per_plan]
 
 -- Contract Info for RFA Foundations (FND)
@@ -36,8 +36,8 @@
 
 
 -- Info for Flatwork Plans (FLT)
-[FW_Plan_Name] [varchar](20) NULL,
-[FW_Plan_ElvOpt] [varchar](20) NULL,
+[FLT_Plan_Name] [varchar](20) NULL,
+[FLT_Plan_ElvOpt] [varchar](20) NULL,
 
 -- Increase Quantities & Units for Flatwork (FLT)
 [Increase_Dollar_per_SF_DW] [decimal](6, 2) NULL,
