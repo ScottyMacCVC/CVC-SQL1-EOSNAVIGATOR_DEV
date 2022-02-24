@@ -15,7 +15,7 @@
 - Staging.CVC_JobSpecData
 - Staging.CVC_JobCostData
 
-### ![CVC_ERD](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/CVC%20ERD%20for%20Estimating%20Universe.png)
+### ![CVC_ERD]()
 
 
 ERD INFO for quickDBD
