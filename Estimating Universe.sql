@@ -3,7 +3,7 @@
 Server\instance: CVC-SQL1\EOSNAVIGATOR_DEV
 Database: Navigator
 Tables: 
-Staging.CVC ContractInformationData
+Staging.CVC_ContractInformationData
 Staging.CVC_JobInfoData
 Staging.CVC_LegalData
 Staging.CVC_JobSpecData
