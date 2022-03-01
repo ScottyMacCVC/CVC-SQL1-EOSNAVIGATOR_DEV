@@ -60,5 +60,5 @@ SubJobNo Varchar pk FK >- CVC_START.SubJobNo
 
 CVC_START
 ----
-JobNo Varchar FK - CVC_JobCostData.JobNo
+JobNo Varchar pk FK - CVC_JobCostData.JobNo
 SubJobNo Varchar pk FK - CVC_JobCostData.SubJobNo
