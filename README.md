@@ -21,13 +21,13 @@
 ERD INFO for quickDBD
 CVC_ContractInformationData
 -
-JobNo Varchar pk fk - CVC_JobCostData.JobNo
-SubJobNo Varchar pk fk - CVC_JobCostData.SubJobNo
+JobNo Varchar pk fk - CVC_START.JobNo
+SubJobNo Varchar pk fk - CVC_START.SubJobNo
 Contract varchar FK >- CVC_Contracts.ContractNo
 
 CVC_JobInfoData
 -
-JobNo Varchar pk fk - CVC_JobCostData.JobNo
+JobNo Varchar pk FK >- CVC_START.JobNo
 
 CVC_LegalData
 ----
@@ -35,8 +35,8 @@ JobNo Varchar pk FK >- CVC_Contracts.JobNo
 
 CVC_JobSpecData
 ----
-JobNo Varchar pk fk - CVC_JobCostData.JobNo
-SubJobNo Varchar pk fk - CVC_JobCostData.SubJobNo
+JobNo Varchar pk fk - CVC_START.JobNo
+SubJobNo Varchar pk fk - CVC_START.SubJobNo
 
 CVC_JobCostData
 ----
@@ -47,3 +47,18 @@ CVC_Contracts
 ----
 JobNo Varchar FK - CVC_JobCostData.JobNo
 ContractNo Varchar pk
+
+CVC_RFA
+----
+JobNo Varchar FK - CVC_START.JobNo
+ContractNo Varchar pk FK >- CVC_Contracts.ContractNo
+
+CVC_PLP
+----
+JobNo Varchar FK - CVC_START.JobNo
+SubJobNo Varchar pk FK >- CVC_START.SubJobNo
+
+CVC_START
+----
+JobNo Varchar FK - CVC_JobCostData.JobNo
+SubJobNo Varchar pk FK - CVC_JobCostData.SubJobNo
