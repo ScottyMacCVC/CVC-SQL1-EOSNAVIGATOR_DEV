@@ -13,6 +13,8 @@
 [Lot_No] [varchar](10) NULL,
 [Address] [varchar](10) NULL,
 [Garage Orientation] [varchar](10) NULL,
+  
+-- "SubJobCo" will be used to filter between the Foundations (FND) & Flatwork/Pavers (FLT)
 [Plan_Name] [varchar](20) NULL,
 [Plan_ElvOpt] [varchar](20) NULL,
 [Contract_Price] [decimal](12, 0) NULL,
