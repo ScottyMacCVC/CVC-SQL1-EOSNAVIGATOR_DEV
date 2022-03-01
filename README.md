@@ -45,7 +45,7 @@ SubJobNo Varchar pk
 
 CVC_Contracts
 ----
-JobNo Varchar FK - CVC_JobCostData.JobNo
+JobNo Varchar FK - CVC_START.JobNo
 ContractNo Varchar pk
 
 CVC_RFA
