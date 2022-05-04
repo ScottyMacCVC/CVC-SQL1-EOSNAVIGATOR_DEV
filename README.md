@@ -67,9 +67,27 @@ SubJobNo Varchar pk FK - CVC_JobCostData.SubJobNo
 
 Content 
 Team members have drafted their project, including the following: 
-- Selected topic 
-- Reason why they selected their topic 
-- Description of their source of data 
+- Selected topic - Forecasting Labor Productivity in 3 operating divisions (Sacramento, Reno, Fresno)
+- Reason why they selected their topic -  determine the most signifcant factors for predicting labor productivity for estimating upcoming projects
+- Description of their source of data - CSV exported from source IBM database from 2016 to 2021 for completed projects. 
+-   Variables include
+-   Job City	
+-   Job Number	
+-   Sub Job Number	
+-   Complete Date
+-   Job Quantity	
+-   Cost Type	
+-   Segment One	
+-   Segment Two	
+-   Hours Regular	
+-   Hours Overtime
+-   Hours Other	
+-   Committed - Total	P/O Received/Unapproved	
+-   Equip/GL	
+-   Quantity Budgeted - Cost	
+-   Quantity Actual
+
+
 - Questions they hope to answer with the data
 Note: The content does not yet need to be in the form of a presentation; text in the README.md works as well.
 
