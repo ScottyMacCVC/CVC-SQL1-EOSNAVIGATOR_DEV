@@ -67,11 +67,35 @@ SubJobNo Varchar pk FK - CVC_JobCostData.SubJobNo
 
 Content 
 Team members have drafted their project, including the following: 
-- Selected topic 
-- Reason why they selected their topic 
-- Description of their source of data 
+- Selected topic - Predict a successful outcome for a Labor Productivity input in each of 3 geographic operating divisions (Sacramento, Reno, Fresno)
+- Reason why they selected their topic -  To determine the most signifcant factors for predicting labor productivity and utilize model feedback to support efficacy of human generated iputs.
+- Description of their source of data - data exported from source IBM database from 2016 to 2021 for completed projects. 
+-   Variables include
+-   Job City
+-   Distance Travelled - to be built	
+-   Job Number	
+-   Sub Job Number	
+-   Complete Date - will be broken into 2 periods (0,1) and (1,2,3,4)
+-   Job Quantity	
+-   Cost Type	
+-   Segment One	
+-   Segment Two	
+-   Hours Regular	
+-   Hours Overtime
+-   Hours Other	
+-   Committed - Total	P/O Received/Unapproved	
+-   Equip/GL	
+-   Quantity Budgeted - Cost	
+-   Quantity Actual
+-   Size of house - sqft/lots aka job quantity / geographic area 1
+-   Unit of Measurement (UoM)
+-   Success Fail (Binary variable on speed Range)
+
+
 - Questions they hope to answer with the data
-Note: The content does not yet need to be in the form of a presentation; text in the README.md works as well.
+ - How do a number of operational conditions affect labor productivity and how significant are are their relative impacts?
+ - Given a number of known variables, how likely is a user-defined input for labor productivity to be successful 70% of the time. 
+
 
 GitHub
 Main Branch README.md must include: 
@@ -85,6 +109,8 @@ Machine Learning Model
 Team members present a provisional machine learning model that stands in for the final machine learning model and accomplishes the following:
 - Takes in data in from the provisional database 
 - Outputs label(s) for input data
+- - SUPERVISED - CONTINUOUS MODEL (OLS REGRESSION)
+- -UNSUPERVISED - LOGIT REGRESSION
 
 Database
 Team members present a provisional database that stands in for the final database and accomplishes the following: 
