@@ -67,14 +67,15 @@ SubJobNo Varchar pk FK - CVC_JobCostData.SubJobNo
 
 Content 
 Team members have drafted their project, including the following: 
-- Selected topic - Forecasting Labor Productivity in 3 operating divisions (Sacramento, Reno, Fresno)
+- Selected topic - Predict porability of successful outcome for a Labor Productivity input in 3 geographic operating divisions (Sacramento, Reno, Fresno)
 - Reason why they selected their topic -  determine the most signifcant factors for predicting labor productivity for estimating upcoming projects
 - Description of their source of data - CSV exported from source IBM database from 2016 to 2021 for completed projects. 
 -   Variables include
--   Job City	
+-   Job City
+-   Distance Travelled - to be built	
 -   Job Number	
 -   Sub Job Number	
--   Complete Date
+-   Complete Date - will be broken into 2 periods (0,1) and (1,2,3,4)
 -   Job Quantity	
 -   Cost Type	
 -   Segment One	
@@ -86,10 +87,15 @@ Team members have drafted their project, including the following:
 -   Equip/GL	
 -   Quantity Budgeted - Cost	
 -   Quantity Actual
+-   Size of house - sqft/lots aka job quantity / geographic area 1
+-   Unit of Measurement (UoM)
+-   Success Fail (Binary variable on speed Range)
 
 
 - Questions they hope to answer with the data
-Note: The content does not yet need to be in the form of a presentation; text in the README.md works as well.
+ - How do a number of operational conditions affect labor productivity and how significant are are their relative impacts?
+ - What non-obvious trends can be indentified in the data?
+ - How reliably are we able to predict future outcomes with data collected?
 
 GitHub
 Main Branch README.md must include: 
@@ -103,6 +109,8 @@ Machine Learning Model
 Team members present a provisional machine learning model that stands in for the final machine learning model and accomplishes the following:
 - Takes in data in from the provisional database 
 - Outputs label(s) for input data
+- - SUPERVISED - CONTINUOUS MODEL (OLS REGRESSION)
+- -UNSUPERVISED - LOGIT REGRESSION
 
 Database
 Team members present a provisional database that stands in for the final database and accomplishes the following: 
