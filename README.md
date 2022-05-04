@@ -63,13 +63,14 @@ CVC_START
 JobNo Varchar pk FK - CVC_JobCostData.JobNo
 SubJobNo Varchar pk FK - CVC_JobCostData.SubJobNo
 
-### Presentation
 
-Content 
-Team members have drafted their project, including the following: 
-- Selected topic - Predict a successful outcome for a Labor Productivity input in each of 3 geographic operating divisions (Sacramento, Reno, Fresno)
-- Reason why they selected their topic -  To determine the most signifcant factors for predicting labor productivity and utilize model feedback to support efficacy of human generated iputs.
-- Description of their source of data - data exported from source IBM database from 2016 to 2021 for completed projects. 
+# Presentation
+
+## Content 
+### Team members have drafted their project, including the following: 
+1. **Selected topic** - Predict a successful outcome for a Labor Productivity input in each of 3 geographic operating divisions (Sacramento, Reno, Fresno)
+2. **Reason why we selected our topic** -  To determine the most signifcant factors for predicting labor productivity and utilize model feedback to support efficacy of human generated iputs.
+3. **Description of our source of data** - data exported from source IBM database from 2016 to 2021 for completed projects. (https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/txt.zip or https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/csv.zip)
 -   Variables include
 -   Job City
 -   Distance Travelled - to be built	
@@ -97,22 +98,22 @@ Team members have drafted their project, including the following:
  - Given a number of known variables, how likely is a user-defined input for labor productivity to be successful 70% of the time. 
 
 
-GitHub
-Main Branch README.md must include: 
+## GitHub
+### Main Branch README.md must include: 
 - Description of the communication protocols 
 - Individual Branches
 - At least one branch for each team member
 - Each team member has at least four commits from the duration of the first segment 
 Note: The descriptions and explanations required in all other project deliverables should also be in your README.md as part of your outline, unless otherwise noted.
 
-Machine Learning Model
-Team members present a provisional machine learning model that stands in for the final machine learning model and accomplishes the following:
+## Machine Learning Model
+### Team members present a provisional machine learning model that stands in for the final machine learning model and accomplishes the following:
 - Takes in data in from the provisional database 
 - Outputs label(s) for input data
 - - SUPERVISED - CONTINUOUS MODEL (OLS REGRESSION)
 - -UNSUPERVISED - LOGIT REGRESSION
 
-Database
-Team members present a provisional database that stands in for the final database and accomplishes the following: 
+## Database
+### Team members present a provisional database that stands in for the final database and accomplishes the following: 
 - Sample data that mimics the expected final database structure or schema 
 - Draft machine learning module is connected to the provisional database
