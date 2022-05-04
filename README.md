@@ -97,22 +97,22 @@ SubJobNo Varchar pk FK - CVC_JobCostData.SubJobNo
  - Given a number of known variables, how likely is a user-defined input for labor productivity to be successful 70% of the time. 
 
 
-GitHub
-Main Branch README.md must include: 
+## GitHub
+### Main Branch README.md must include: 
 - Description of the communication protocols 
 - Individual Branches
 - At least one branch for each team member
 - Each team member has at least four commits from the duration of the first segment 
 Note: The descriptions and explanations required in all other project deliverables should also be in your README.md as part of your outline, unless otherwise noted.
 
-Machine Learning Model
-Team members present a provisional machine learning model that stands in for the final machine learning model and accomplishes the following:
+## Machine Learning Model
+### Team members present a provisional machine learning model that stands in for the final machine learning model and accomplishes the following:
 - Takes in data in from the provisional database 
 - Outputs label(s) for input data
 - - SUPERVISED - CONTINUOUS MODEL (OLS REGRESSION)
 - -UNSUPERVISED - LOGIT REGRESSION
 
-Database
-Team members present a provisional database that stands in for the final database and accomplishes the following: 
+## Database
+### Team members present a provisional database that stands in for the final database and accomplishes the following: 
 - Sample data that mimics the expected final database structure or schema 
 - Draft machine learning module is connected to the provisional database
