@@ -35,6 +35,7 @@
 **Questions they hope to answer with the data**
  - How do a number of operational conditions affect labor productivity and how significant are are their relative impacts?
  - Given a number of known variables, how likely is a user-defined input for labor productivity to be successful 70% of the time?
+
 ![sexPanther](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/sexPanther.jpg)
 
 
