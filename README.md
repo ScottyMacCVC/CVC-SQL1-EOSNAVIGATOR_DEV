@@ -117,4 +117,5 @@ Note: The descriptions and explanations required in all other project deliverabl
 ## Database
 ### Team members present a provisional database that stands in for the final database and accomplishes the following: 
 - Sample data that mimics the expected final database structure or schema (pgAdmin schema - https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/DB_schema.sql)
+![DB](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1-Database%20Tables.PNG)
 - Draft machine learning module is connected to the provisional database {TBD)
