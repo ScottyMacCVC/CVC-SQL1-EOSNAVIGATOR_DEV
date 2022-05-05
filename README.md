@@ -69,7 +69,7 @@ SubJobNo Varchar pk FK - CVC_JobCostData.SubJobNo
 ### Team members have drafted their project, including the following: 
 1. **Selected topic** - Predict a successful outcome for a Labor Productivity input in each of 3 geographic operating divisions (Sacramento, Reno, Fresno)
 2. **Reason why we selected our topic** -  To determine the most signifcant factors for predicting labor productivity and utilize model feedback to support efficacy of human generated inputs.
-3. **Description of our source of data** - data exported from source IBM database from 2016 to 2021 for completed projects. 
+3. **Description of our source of data** - data exported from source IBM database from 2016 to 2021 for completed projects. (https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/txt.zip or https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/csv.zip)
 
 **Variables include:**
 -   Job City
@@ -116,5 +116,5 @@ Note: The descriptions and explanations required in all other project deliverabl
 
 ## Database
 ### Team members present a provisional database that stands in for the final database and accomplishes the following: 
-- Sample data that mimics the expected final database structure or schema (https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/txt.zip or https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/csv.zip)
-- Draft machine learning module is connected to the provisional database (pgAdmin schema - https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/DB_schema.sql)
+- Sample data that mimics the expected final database structure or schema (pgAdmin schema - https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/DB_schema.sql)
+- Draft machine learning module is connected to the provisional database {TBD)
