@@ -1,0 +1,21 @@
+CREATE TABLE job_cost_data (
+Customer_Name varchar NULL,
+Department_Number varchar NULL,
+Job_Type_Description varchar NULL,
+Job_City varchar NULL,
+Job_Number varchar NULL,	
+Sub_Job_Number varchar NULL,	
+Complete_Date varchar NULL,	
+Job_Quantity decimal NULL,	
+Cost_Type varchar NULL,	
+Segment_One varchar NULL,	
+Segment_Two varchar NULL,	
+Hours_Regular varchar NULL,	
+Hours_Overtime varchar NULL,	
+Hours_Other varchar NULL,	
+Committed_Total_PO_ReceivedUnapproved decimal NULL,
+Equip_GL decimal NULL,	
+Quantity_Budgeted_Cost varchar NULL,	
+Quantity_Actual varchar NULL,	
+
+);
