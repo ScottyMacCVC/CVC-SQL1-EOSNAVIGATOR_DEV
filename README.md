@@ -94,7 +94,7 @@ SubJobNo Varchar pk FK - CVC_JobCostData.SubJobNo
 -   Success Fail (Binary variable on speed Range)
 
 
-- **Questions they hope to answer with the data**
+**Questions they hope to answer with the data**
  - How do a number of operational conditions affect labor productivity and how significant are are their relative impacts?
  - Given a number of known variables, how likely is a user-defined input for labor productivity to be successful 70% of the time. 
 
