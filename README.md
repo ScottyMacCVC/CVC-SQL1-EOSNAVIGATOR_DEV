@@ -69,7 +69,56 @@ Note: The descriptions and explanations required in all other project deliverabl
 -Tableau presentation 
 
 ### Other Ideas to Chase
--Map with information regarding the job. An example we did in class was the tectonic plates. We would want to add geo locations of our job (https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Resources/Addresses%20List.csv), show data important to the location, and create a link to cloud repository ()
+-Map with information regarding the job. An example we did in class was the tectonic plates. We would want to add geo locations of our job (https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Resources/Addresses%20List.csv), show data important to the location (similar to https://github.com/ScottyMacCVC/Mapping_Earthquakes/blob/main/Earthquake_Challenge/Images/Deliverable%202%20-Earthquake%20Data.JPG), and create a link to cloud repository (https://concretevalue.sharefile.com/home/shared/fobdd895-cc88-4d76-b78c-daf15b1ef46f). The coding would be based off this js (https://github.com/ScottyMacCVC/Mapping_Earthquakes/blob/main/Earthquake_Challenge/static/js/challenge_logic.js) and the specific section we need to use is 
+
+_// 7. Creating a GeoJSON layer with the retrieved data that adds a circle to the map 
+  // sets the style of the circle, and displays the magnitude and location of the earthquake
+  //  after the marker has been created and styled.
+  L.geoJson(data, {
+    pointToLayer: function(feature, latlng) {
+      return L.circleMarker(latlng);
+    },
+    style: styleInfo,
+    onEachFeature: function(feature, layer) {
+      layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
+    }
+  }).addTo(majorEarthquakes);
+  // 8. Add the major earthquakes layer to the map.
+  majorEarthquakes.addTo(map);
+  // 9. Close the braces and parentheses for the major earthquake data.
+  });
+
+  // Here we create a legend control object.
+  let legend = L.control({
+    position: "bottomright"
+  });
+
+  // Then add all the details for the legend
+  legend.onAdd = function() {
+    let div = L.DomUtil.create("div", "info legend");
+    const magnitudes = [0, 1, 2, 3, 4, 5];
+    const colors = [
+      "#98ee00",
+      "#d4ee00",
+      "#eecc00",
+      "#ee9c00",
+      "#ea822c",
+      "#ea2c2c"
+    ];
+
+  // Looping through our intervals to generate a label with a colored square for each interval.
+    for (var i = 0; i < magnitudes.length; i++) {
+      console.log(colors[i]);
+      div.innerHTML +=
+        "<i style='background: " + colors[i] + "'></i> " +
+        magnitudes[i] + (magnitudes[i + 1] ? "&ndash;" + magnitudes[i + 1] + "<br>" : "+");
+      }
+      return div;
+    };
+
+  // Finally, we add our legend to the map.
+  legend.addTo(map);
+_
 
 ## Server\instance: CVC-SQL1\EOSNAVIGATOR_DEV
 - Database: Navigator
