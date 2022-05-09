@@ -70,7 +70,7 @@ Note: The descriptions and explanations required in all other project deliverabl
 -Tableau presentation 
 
 ---
-### Other Ideas to Chase
+### Map Concepts
 -Map with information regarding the job. An example we did in class was the tectonic plates. We would want to add geo locations of our job (https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Resources/Addresses%20List.csv), show data important to the location (similar to https://github.com/ScottyMacCVC/Mapping_Earthquakes/blob/main/Earthquake_Challenge/Images/Deliverable%202%20-Earthquake%20Data.JPG), and create a link to cloud repository (https://concretevalue.sharefile.com/home/shared/fobdd895-cc88-4d76-b78c-daf15b1ef46f). The coding would be based off this js (https://github.com/ScottyMacCVC/Mapping_Earthquakes/blob/main/Earthquake_Challenge/static/js/challenge_logic.js) and the specific section we need to use is:
 
 // 7. Creating a GeoJSON layer with the retrieved data that adds a circle to the map 
