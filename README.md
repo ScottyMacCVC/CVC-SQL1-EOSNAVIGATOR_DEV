@@ -64,6 +64,7 @@ Note: The descriptions and explanations required in all other project deliverabl
 ## Concepts to Build Out
 
 ### Lorenzo-Gutierrez
+-TBD
 
 ### Jandro Boado
 -Tableau presentation 
