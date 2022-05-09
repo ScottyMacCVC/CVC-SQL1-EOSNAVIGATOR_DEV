@@ -68,6 +68,7 @@ Note: The descriptions and explanations required in all other project deliverabl
 
 ### Jandro Boado
 -Tableau presentation 
+
 Hi Jandro - I put together a handful of current CVC metrics. You can load up this csv (https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/csv.zip) and mess around with tableau. Good luck!!! Call me at 916 549 8012 if you run into ay questions or metric issues. :)
 ```
 Labor Speed Productivity Rate = <Quantity Budgeted - Cost>/(<Hours Other>+<Hours Overtime>+<Hours Regular>)
