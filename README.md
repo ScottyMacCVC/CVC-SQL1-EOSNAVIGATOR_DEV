@@ -61,6 +61,16 @@ Note: The descriptions and explanations required in all other project deliverabl
 - Draft machine learning module is connected to the provisional database {TBD)
 
 
+## Concepts to Build Out
+
+### Lorenzo-Gutierrez
+
+### Jandro Boado
+-Tableau presentation 
+
+### Other Ideas to Chase
+-Map with information regarding the job. An example we did in class was the tectonic plates. We would want to add geo locations of our job (https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Resources/Addresses%20List.csv), show data important to the location, and create a link to cloud repository ()
+
 ## Server\instance: CVC-SQL1\EOSNAVIGATOR_DEV
 - Database: Navigator
 ### Tables: 
