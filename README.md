@@ -68,7 +68,13 @@ Note: The descriptions and explanations required in all other project deliverabl
 
 ### Jandro Boado
 -Tableau presentation 
-
+Hi Jandro - I put together a handful of current CVC metrics. You can load up this csv (https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/csv.zip) and mess around with tableau. Good luck!!! Call me at 916 549 8012 if you run into ay questions or metric issues. :)
+```
+Labor Speed Productivity Rate = <Quantity Budgeted - Cost>/(<Hours Other>+<Hours Overtime>+<Hours Regular>)
+Hours per Lot = (<Hours Other>+<Hours Overtime>+<Hours Regular>)/<Lots>
+$/Unit = (<Committed - Total>+<P/O Received/Unapproved>+<Equip/GL>)/<Quantity Actual>
+$/Hour = (<Committed - Total>+<P/O Received/Unapproved>+<Equip/GL>)/(<Hours Regular>+<Hours Overtime>+<Hours Other>) 
+```
 ---
 ### Map Concepts
 -Map with information regarding the job. An example we did in class was the tectonic plates. The change would be we would want to use geo locations of our job (https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Resources/Addresses%20List.csv), show data important to the location in a text box (similar to https://github.com/ScottyMacCVC/Mapping_Earthquakes/blob/main/Earthquake_Challenge/Images/Deliverable%202%20-Earthquake%20Data.JPG), and create a link to cloud repository (https://concretevalue.sharefile.com/home/shared/fobdd895-cc88-4d76-b78c-daf15b1ef46f). The coding would be based off this js (https://github.com/ScottyMacCVC/Mapping_Earthquakes/blob/main/Earthquake_Challenge/static/js/challenge_logic.js) and the specific section we need to use is:
