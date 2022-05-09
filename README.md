@@ -72,8 +72,8 @@ Hi Jandro - I put together a handful of current CVC metrics. You can load up thi
 ```
 Labor Speed Productivity Rate = <Quantity Budgeted - Cost>/(<Hours Other>+<Hours Overtime>+<Hours Regular>)
 Hours per Lot = (<Hours Other>+<Hours Overtime>+<Hours Regular>)/<Lots>
-$/Unit = (<Committed - Total>+<P/O Received/Unapproved>+<Equip/GL>)/<Quantity Actual>
-$/Hour = (<Committed - Total>+<P/O Received/Unapproved>+<Equip/GL>)/(<Hours Regular>+<Hours Overtime>+<Hours Other>) 
+$ per Unit = (<Committed - Total>+<P/O Received/Unapproved>+<Equip/GL>)/<Quantity Actual>
+$ per Hour = (<Committed - Total>+<P/O Received/Unapproved>+<Equip/GL>)/(<Hours Regular>+<Hours Overtime>+<Hours Other>) 
 ```
 ---
 ### Map Concepts
