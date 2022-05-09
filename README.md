@@ -120,7 +120,11 @@ Note: The descriptions and explanations required in all other project deliverabl
 
   // Finally, we add our legend to the map.
   legend.addTo(map);
-  
+
+
+
+![dataOnMap](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/22.05.09-Data%20Shown%20on%20Map.png)
+
 ---
 
 Additional CVC SQL Database Items
