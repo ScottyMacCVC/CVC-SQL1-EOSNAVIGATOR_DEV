@@ -120,6 +120,7 @@ Note: The descriptions and explanations required in all other project deliverabl
 
   // Finally, we add our legend to the map.
   legend.addTo(map);
+  
 ---
 
 ## Server\instance: CVC-SQL1\EOSNAVIGATOR_DEV
