@@ -123,6 +123,8 @@ Note: The descriptions and explanations required in all other project deliverabl
   
 ---
 
+Additional CVC SQL Database Items
+---
 ## Server\instance: CVC-SQL1\EOSNAVIGATOR_DEV
 - Database: Navigator
 ### Tables: 
