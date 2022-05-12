@@ -3,7 +3,10 @@
 
 # Presentation
 
-## Content 
+## Sales Point 
+Our product will provide entry level construction database & reporting. The unique combination of web-based services can allow construction subcontractors to import existing data and receive a reasonably robust system. Most construction software is targeted at larger General Contractors, Owners, and Builders. There is an opportunity to provide low-tech-subcontractors a proper way to store their data. There are many examples of talented construction workers who would like to start a company, but are held back by running estimating, office work, and their field at the same time. The product would help bring the office to the field. There are many existing subcontractors running their books on Excel or Quickbooks. These are inefficient systems. There will be concern with upgrading to a new software. _How will it effect production?_  Our built system would allow our customer to continue their current processes, but built to convert the information into more manageable and usable measurements. With Tableau, we can utilize the data, tell a story about the job's costs, and provide an in-depth view of construction costs. 
+
+
 ### Team members have drafted their project, including the following: 
 1. **Selected topic** - Predict a successful outcome for a Labor Productivity input in each of 3 geographic operating divisions (1-Sacramento, 5-Fresno, 6-Reno)
 2. **Reason why we selected our topic** -  To determine the most signifcant factors for predicting labor productivity and utilize model feedback to support efficacy of human generated inputs.
@@ -61,11 +64,6 @@ Note: The descriptions and explanations required in all other project deliverabl
 - Draft machine learning module is connected to the provisional database {TBD)
 
 
-## Concepts to Build Out
-
-### Lorenzo-Gutierrez
--TBD
-
 ### Jandro Boado
 -Tableau presentation 
 
@@ -77,7 +75,8 @@ $ per Unit = (<Committed - Total>+<P/O Received/Unapproved>+<Equip/GL>)/<Quantit
 $ per Hour = (<Committed - Total>+<P/O Received/Unapproved>+<Equip/GL>)/(<Hours Regular>+<Hours Overtime>+<Hours Other>) 
 ```
 ---
-### Map Concepts
+
+### Lorenzo-Gutierrez Map Concepts
 -Map with information regarding the job. An example we did in class was the tectonic plates. The change would be we would want to use geo locations of our job (https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Resources/Addresses%20List.csv), show data important to the location in a text box (similar to https://github.com/ScottyMacCVC/Mapping_Earthquakes/blob/main/Earthquake_Challenge/Images/Deliverable%202%20-Earthquake%20Data.JPG), and create a link to cloud repository (https://concretevalue.sharefile.com/home/shared/fobdd895-cc88-4d76-b78c-daf15b1ef46f). The coding would be based off this js (https://github.com/ScottyMacCVC/Mapping_Earthquakes/blob/main/Earthquake_Challenge/static/js/challenge_logic.js) and the specific section we need to use is:
 
 ```
