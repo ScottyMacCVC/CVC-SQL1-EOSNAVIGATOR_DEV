@@ -62,12 +62,22 @@ Note: The descriptions and explanations required in all other project deliverabl
 ### Team members present a provisional database that stands in for the final database and accomplishes the following: 
 - Sample data that mimics the expected final database structure or schema (pgAdmin schema - https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/DB_schema.sql)
 - **Extract** All data will be extracted from Concrete Value Corp's eCMS Database. eCMS is a comprehensive suite of software applications that help commercial contractors manage all aspects of their financials and operations. eCMS is specifically built for the construction industry delivering users business process automation and real-time access to critical integrated data. We will use Desktop Intelligence, a Crystal reporting software, to pull the data. 
-- **Transform** The data itself is relatively clean. We may need to change column headings, but we will have limited ability to transform the data because it's currently laid out in a proper manner. 
+- **Transform** The data itself is relatively clean. There are some changes, but it's mostly for functionality
+
+```
+# Steps for Transform on _Orders Processed-DataPull-OrdersPerSubJob.csv_
+= Table.SelectRows(#"Changed Type", each ([Order Number] <> null))
+= Table.RemoveColumns(#"Filtered Rows",{"v_Responsible Person", "Invoice Number", "Warehouse", "Invoice Date"})
+```
+
 - **Extract** All data is extracted to a CSV file. The CSV files will be loaded into Tableau. It would be very cool if we could load the data into PGAdmin, have it connect to AWS, and then our team could download the information or use the web-source to create reporting. 
 
 ![DB](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1-Database%20Tables.PNG)
 - Draft machine learning module is connected to the provisional database {TBD)
 
+```
+# Steps for Transform
+```
 
 ### Jandro Boado
 -Tableau presentation 
