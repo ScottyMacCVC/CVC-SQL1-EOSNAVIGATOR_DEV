@@ -66,8 +66,6 @@ Note: The descriptions and explanations required in all other project deliverabl
 - **Extract** All data is extracted to a CSV file. The CSV files will be loaded into Tableau. It would be very cool if we could load the data into PGAdmin, have it connect to AWS, and then our team could download the information or use the web-source to create reporting. 
 
 ![DB](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1-Database%20Tables.PNG)
-![Tableau Example](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/2-Example%20Tableau.png)
-![Productivity Calc](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/3-Productivity%20Rate.png)
 - Draft machine learning module is connected to the provisional database {TBD)
 
 
@@ -81,6 +79,11 @@ Hours per Lot = (<Hours Other>+<Hours Overtime>+<Hours Regular>)/<Lots>
 $ per Unit = (<Committed - Total>+<P/O Received/Unapproved>+<Equip/GL>)/<Quantity Actual>
 $ per Hour = (<Committed - Total>+<P/O Received/Unapproved>+<Equip/GL>)/(<Hours Regular>+<Hours Overtime>+<Hours Other>) 
 ```
+
+![Tableau Example](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/2-Example%20Tableau.png)
+![Productivity Calc](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/3-Productivity%20Rate.png)
+
+
 ---
 
 ### Lorenzo-Gutierrez Map Concepts
