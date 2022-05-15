@@ -65,6 +65,12 @@ Note: The descriptions and explanations required in all other project deliverabl
 - **Transform** The data itself is relatively clean. There are some changes, but it's mostly for functionality
 
 ```
+# Steps for Transform _Step-1 Machine Learning Data-Data Pull_ Our teammate, Lorenzo, requested all Job Numbers that are Null to be removed. 
+Data looks good
+
+```
+
+```
 # Steps for Transform on _Orders Processed-DataPull.csv_ We only want to look at closed jobs. All WIP or Work In Progress jobs need to be removed. We also want to remove incomplete data. 
 Table.SelectRows(#"Changed Type", each ([v_Responsible Person] <> ""))
 Table.SelectRows(#"Changed Type", each ([v_Responsible Person] <> "") and ([v_Job Type Description] <> "COMMERCIAL WIP 1         " and [v_Job Type Description] <> "WIP                      "))
@@ -73,7 +79,8 @@ Table.SelectRows(#"Changed Type", each ([v_Responsible Person] <> "") and ([v_Jo
 ![Orders in Tableau](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/4-Orders%20Processed.PNG)
 
 ```
-# Steps for Transform
+# Steps for Transform 
+
 ```
 
 - **Extract** All data is extracted to a CSV file. The CSV files will be loaded into Tableau. It would be very cool if we could load the data into PGAdmin, have it connect to AWS, and then our team could download the information or use the web-source to create reporting. 
