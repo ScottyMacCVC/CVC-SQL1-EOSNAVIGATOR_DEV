@@ -79,8 +79,10 @@ Table.SelectRows(#"Changed Type", each ([v_Responsible Person] <> "") and ([v_Jo
 ![Orders in Tableau](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/4-Orders%20Processed.PNG)
 
 ```
-# Steps for Transform 
-
+# Steps for Transform _Addresses List_
+Table.SelectRows(#"Changed Type", each ([Notes] <> ""))
+Table.SplitColumn(#"Filtered Rows", "Name", Splitter.SplitTextByEachDelimiter({" "}, QuoteStyle.Csv, false), {"Job Number", "Job Name"})
+Table.TransformColumnTypes(#"Split Column by Delimiter",{{"Job Number", type text}, {"Job Name", type text}})
 ```
 
 - **Extract** All data is extracted to a CSV file. The CSV files will be loaded into Tableau. It would be very cool if we could load the data into PGAdmin, have it connect to AWS, and then our team could download the information or use the web-source to create reporting. 
