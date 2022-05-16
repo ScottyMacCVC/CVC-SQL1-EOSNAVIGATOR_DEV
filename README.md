@@ -99,6 +99,9 @@ $ per Unit = (<Committed - Total>+<P/O Received/Unapproved>+<Equip/GL>)/<Quantit
 $ per Hour = (<Committed - Total>+<P/O Received/Unapproved>+<Equip/GL>)/(<Hours Regular>+<Hours Overtime>+<Hours Other>) 
 ```
 
+Example Bid Board Tableau Report - https://public.tableau.com/app/profile/scott.macfarlane2218/viz/shared/976C2S46Z
+Example Productivity & Margin Report - https://public.tableau.com/app/profile/scott.macfarlane2218/viz/Step1-TheStandard-Mapped-D15/MappedStepD15?publish=yes
+
 ![Tableau Example](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/2-Example%20Tableau.png)
 ![Productivity Calc](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/3-Productivity%20Rate.png)
 
