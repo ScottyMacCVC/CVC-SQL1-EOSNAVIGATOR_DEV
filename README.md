@@ -72,6 +72,7 @@ Table.SelectRows(#"Changed Type", each ([v_Responsible Person] <> ""))
 Table.SelectRows(#"Changed Type", each ([v_Responsible Person] <> "") and ([v_Job Type Description] <> "COMMERCIAL WIP 1         " and [v_Job Type Description] <> "WIP                      "))
 
 ```
+Link to Tableau - https://public.tableau.com/app/profile/scott.macfarlane2218/viz/OrdersPerSubJob/OrdersPerSub?publish=yes
 ![Orders in Tableau](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/4-Orders%20Processed.PNG)
 
 ```
