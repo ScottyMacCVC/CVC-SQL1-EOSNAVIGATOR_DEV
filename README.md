@@ -82,7 +82,7 @@ REGRESSION OUTLINE
 		4. USE GET DUMMIES
 		5. can be done in pandas. 
 6. Regress different models and assess output information
-7. Run 'Chow Test' to see if there is a satistically signifcant difference caused by COVID on labor prouctivity. 
+7. Run 'Chow Test' to see if there is a satistically signifcant difference caused by COVID on labor prouctivity. https://en.wikipedia.org/wiki/Chow_test
 8. Perform analysis based off regression results.  
 ```
 
