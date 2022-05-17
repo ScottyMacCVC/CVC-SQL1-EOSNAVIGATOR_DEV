@@ -16,6 +16,7 @@ We also seek to explore the effects of Covid on  labor productivity. The cost of
 ![Query](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/QueryForDataAnalysis.png)
 
 **Variables include:**
+```
 -   Job City
 -   Distance Travelled - to be built	
 -   Builder
@@ -36,7 +37,7 @@ We also seek to explore the effects of Covid on  labor productivity. The cost of
 -   Size of house - sqft/lots aka job quantity / geographic area 1
 -   Unit of Measurement (UoM)
 -   Success Fail (Binary variable on speed Range)
-
+```
 
 **Questions they hope to answer with the data**
  - How do a number of operational conditions affect labor productivity and how significant are are their relative impacts?
