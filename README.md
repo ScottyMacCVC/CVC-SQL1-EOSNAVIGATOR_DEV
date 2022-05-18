@@ -86,6 +86,8 @@ REGRESSION OUTLINE
 8. Perform analysis based off regression results.  
 ```
 
+![Machine Learning Model](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/6-Machine%20Learning%20Model.jpg)
+
 - -UNSUPERVISED - LOGIT REGRESSION
 
 ## Database
