@@ -85,6 +85,7 @@ REGRESSION OUTLINE
 7. Run 'Chow Test' to see if there is a satistically signifcant difference caused by COVID on labor prouctivity. https://en.wikipedia.org/wiki/Chow_test
 8. Perform analysis based off regression results.  
 ```
+Machine learning using Pandas - https://github.com/dataprofessor/code/blob/master/python/pandas_exploratory_data_analysis.ipynb
 
 ![Machine Learning Model](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/6-Machine%20Learning%20Model.jpg)
 
