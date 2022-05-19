@@ -24,6 +24,7 @@ REGRESSION OUTLINE
 6. Regress different models and assess output information
  Dependent variable = 'Miss'
  Independent Variables = 'Customer' , 'Job Type Description', 'Job City', 'Lots', 'Winter', 'Department Number'
+ FOR MODELS = make a comparison to a benchmark not just the budget. RS MEANS?
  Split into training and testing sets
  Deploy model
  Generate Confusion MAtrix
