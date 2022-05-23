@@ -97,6 +97,10 @@ Machine learning using Pandas - https://github.com/dataprofessor/code/blob/maste
 - **Extract** All data will be extracted from Concrete Value Corp's eCMS Database. eCMS is a comprehensive suite of software applications that help commercial contractors manage all aspects of their financials and operations. eCMS is specifically built for the construction industry delivering users business process automation and real-time access to critical integrated data. We will use Desktop Intelligence, a Crystal reporting software, to pull the data. 
 - **Transform** Nulls, blanks, and unnecessary data to be removed to improve functionality.
 
+Our team has identified the issues with our dataset. Our Unit of Measurement creates an error because there are many entries that appear to be empty. When we would load the data, the system would tell us _ERROR: extra data after last expected column._ After further review, we discovered this was not a blank and was "   " or several spaces as a string. We replaced all entries in the Unit of Measurement column with "NA" for not applicable. The change allowed the tables to be built and we successfully added all items to the tables. 
+
+![Orders in Tableau](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/4-Orders%20Processed.PNG)
+
 ```
 # Steps for Transform on _Orders Processed-DataPull.csv_ We only want to look at closed jobs. All WIP or Work In Progress jobs need to be removed. We also want to remove incomplete data. 
 Table.SelectRows(#"Changed Type", each ([v_Responsible Person] <> ""))
