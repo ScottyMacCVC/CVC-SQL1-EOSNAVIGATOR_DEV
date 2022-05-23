@@ -11,38 +11,11 @@ We also seek to explore the effects of Covid on  labor productivity. The cost of
 ### Team members have drafted their project, including the following: 
 1. **Selected topic** - Predict a successful outcome for a Labor Productivity input in each of 3 geographic operating divisions (1-Sacramento, 5-Fresno, 6-Reno)
 2. **Reason why we selected our topic** -  To determine the most signifcant factors for predicting labor productivity and utilize model feedback to support efficacy of human generated inputs.
-3. **Description of our source of data** - data exported from source IBM database from 2016 to 2021 for completed projects. (https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/tree/main/Resources/01-Zip) & this is the query search 
-
-![Query](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/QueryForDataAnalysis.png)
-
-**Variables include:**
-```
--   Job City
--   Distance Travelled - to be built	
--   Builder
--   Job Number	
--   Sub Job Number	
--   Complete Date - will be broken into 2 periods (0,1) and (1,2,3,4)
--   Job Quantity	
--   Cost Type	
--   Segment One	
--   Segment Two	
--   Hours Regular	
--   Hours Overtime
--   Hours Other	
--   Committed - Total	P/O Received/Unapproved	
--   Equip/GL	
--   Quantity Budgeted - Cost	
--   Quantity Actual
--   Size of house - sqft/lots aka job quantity / geographic area 1
--   Unit of Measurement (UoM)
--   Success Fail (Binary variable on speed Range)
-```
+3. **Description of our source of data** - data exported from source IBM database from 2016 to 2021 for completed projects. (https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/tree/main/Resources/01-Zip).
 
 **Questions they hope to answer with the data**
  - How do a number of operational conditions affect labor productivity and how significant are are their relative impacts?
  - Given a number of known variables, how likely is a user-defined input for labor productivity to be successful 70% of the time?
-
 
 ## GitHub
 ### Main Branch README.md must include: 
@@ -94,7 +67,9 @@ Machine learning using Pandas - https://github.com/dataprofessor/code/blob/maste
 ## Database
 ### Team members present a provisional database that stands in for the final database and accomplishes the following: 
 - Sample data that mimics the expected final database structure or schema - https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Resources/01-Zip/DB_schema.sql
-- **Extract** All data will be extracted from Concrete Value Corp's eCMS Database. eCMS is a comprehensive suite of software applications that help commercial contractors manage all aspects of their financials and operations. eCMS is specifically built for the construction industry delivering users business process automation and real-time access to critical integrated data. We will use Desktop Intelligence, a Crystal reporting software, to pull the data. 
+- **Extract** All data will be extracted from Concrete Value Corp's eCMS Database. eCMS is a comprehensive suite of software applications that help commercial contractors manage all aspects of their financials and operations. eCMS is specifically built for the construction industry delivering users business process automation and real-time access to critical integrated data. We will use Desktop Intelligence, a Crystal reporting software, to pull the data. We will use the query filter below and pull all data from 2016 to 2021. 
+
+![Query](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/QueryForDataAnalysis.png)
 
 - **Transform** Nulls, blanks, and unnecessary data to be removed to improve functionality. Our team has identified the issues with our dataset. Our Unit of Measurement creates an error because there are many entries that appear to be empty. When we would load the data, the system would tell us _ERROR: extra data after last expected column._ After further review, we discovered this was not a blank and was "   " or several spaces as a string. We replaced all entries in the Unit of Measurement column with "NA" for not applicable. The change allowed the tables to be built and we successfully added all items to the tables. 
 
