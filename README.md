@@ -95,34 +95,20 @@ Machine learning using Pandas - https://github.com/dataprofessor/code/blob/maste
 ### Team members present a provisional database that stands in for the final database and accomplishes the following: 
 - Sample data that mimics the expected final database structure or schema (pgAdmin schema - https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/DB_schema.sql)
 - **Extract** All data will be extracted from Concrete Value Corp's eCMS Database. eCMS is a comprehensive suite of software applications that help commercial contractors manage all aspects of their financials and operations. eCMS is specifically built for the construction industry delivering users business process automation and real-time access to critical integrated data. We will use Desktop Intelligence, a Crystal reporting software, to pull the data. 
-- **Transform** Nulls, blanks, and unnecessary data to be removed to improve functionality.
 
-Our team has identified the issues with our dataset. Our Unit of Measurement creates an error because there are many entries that appear to be empty. When we would load the data, the system would tell us _ERROR: extra data after last expected column._ After further review, we discovered this was not a blank and was "   " or several spaces as a string. We replaced all entries in the Unit of Measurement column with "NA" for not applicable. The change allowed the tables to be built and we successfully added all items to the tables. 
+- **Transform** Nulls, blanks, and unnecessary data to be removed to improve functionality. Our team has identified the issues with our dataset. Our Unit of Measurement creates an error because there are many entries that appear to be empty. When we would load the data, the system would tell us _ERROR: extra data after last expected column._ After further review, we discovered this was not a blank and was "   " or several spaces as a string. We replaced all entries in the Unit of Measurement column with "NA" for not applicable. The change allowed the tables to be built and we successfully added all items to the tables. 
 
-![Orders in Tableau](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/4-Orders%20Processed.PNG)
+![1.0-Transform20Data](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1.0-Transform%20Data.PNG)
+![1.0-Transform%20Data-Image%20of%20MIA%20UofM](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1.0-Transform%20Data-Image%20of%20MIA%20UofM.png)
 
-```
-# Steps for Transform on _Orders Processed-DataPull.csv_ We only want to look at closed jobs. All WIP or Work In Progress jobs need to be removed. We also want to remove incomplete data. 
-Table.SelectRows(#"Changed Type", each ([v_Responsible Person] <> ""))
-Table.SelectRows(#"Changed Type", each ([v_Responsible Person] <> "") and ([v_Job Type Description] <> "COMMERCIAL WIP 1         " and [v_Job Type Description] <> "WIP                      "))
+- **Load** Our team needs access to the data. We built a database, added the tables in PgAdmin, and then connected to our AWS Relational Database Service (RDS). The team was able top connect to the database and export the data to CSVs or directly into Pandas. Any and all changes made during the Extract and Transform will now automatically update for every team member and provide an efficient way to gather our data. 
 
-```
-Link to Tableau - https://public.tableau.com/app/profile/scott.macfarlane2218/viz/OrdersPerSubJob/OrdersPerSub?publish=yes
-![Orders in Tableau](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/4-Orders%20Processed.PNG)
-
-```
-# Steps for Transform _Addresses List_
-Table.SelectRows(#"Changed Type", each ([Notes] <> ""))
-Table.SplitColumn(#"Filtered Rows", "Name", Splitter.SplitTextByEachDelimiter({" "}, QuoteStyle.Csv, false), {"Job Number", "Job Name"})
-Table.TransformColumnTypes(#"Split Column by Delimiter",{{"Job Number", type text}, {"Job Name", type text}})
-```
-
-- **Extract** All data is extracted to a CSV file. The CSV files will be loaded into Tableau. It would be very cool if we could load the data into PGAdmin, have it connect to AWS, and then our team could download the information or use the web-source to create reporting. 
-
-![DB](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1-Database%20Tables.PNG)
-- Draft machine learning module is connected to the provisional database {TBD)
-
-
+![job_cost_data](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGAThttps://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/tree/main/ImagesOR_DEV/blob/main/ETL_create_database.ipynb)
+![]()
+![]()
+![]()
+![]()
+![]()
 
 ### Jandro Boado
 -Tableau presentation 
