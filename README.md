@@ -103,6 +103,8 @@ Machine learning using Pandas - https://github.com/dataprofessor/code/blob/maste
 
 - **Load** Our team needs access to the data. We built a database, added the tables in PgAdmin, and then connected to our AWS Relational Database Service (RDS). The team was able top connect to the database and export the data to CSVs or directly into Pandas. Any and all changes made during the Extract and Transform will now automatically update for every team member and provide an efficient way to gather our data. 
 
+DB Schema - https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Resources/01-Zip/DB_schema.sql
+
 ![job_cost_data](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1.1-Database%20Tables-job_cost_data.PNG)
 ![current_job_addresses](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1.2-Database%20Tables-current_job_addresses.PNG)
 ![orders_processed](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1.2-Database%20Tables-orders_processed.PNG)
