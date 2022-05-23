@@ -93,7 +93,7 @@ Machine learning using Pandas - https://github.com/dataprofessor/code/blob/maste
 
 ## Database
 ### Team members present a provisional database that stands in for the final database and accomplishes the following: 
-- Sample data that mimics the expected final database structure or schema (pgAdmin schema - https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/DB_schema.sql)
+- Sample data that mimics the expected final database structure or schema - https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Resources/01-Zip/DB_schema.sql
 - **Extract** All data will be extracted from Concrete Value Corp's eCMS Database. eCMS is a comprehensive suite of software applications that help commercial contractors manage all aspects of their financials and operations. eCMS is specifically built for the construction industry delivering users business process automation and real-time access to critical integrated data. We will use Desktop Intelligence, a Crystal reporting software, to pull the data. 
 
 - **Transform** Nulls, blanks, and unnecessary data to be removed to improve functionality. Our team has identified the issues with our dataset. Our Unit of Measurement creates an error because there are many entries that appear to be empty. When we would load the data, the system would tell us _ERROR: extra data after last expected column._ After further review, we discovered this was not a blank and was "   " or several spaces as a string. We replaced all entries in the Unit of Measurement column with "NA" for not applicable. The change allowed the tables to be built and we successfully added all items to the tables. 
@@ -103,7 +103,6 @@ Machine learning using Pandas - https://github.com/dataprofessor/code/blob/maste
 
 - **Load** Our team needs access to the data. We built a database, added the tables in PgAdmin, and then connected to our AWS Relational Database Service (RDS). The team was able top connect to the database and export the data to CSVs or directly into Pandas. Any and all changes made during the Extract and Transform will now automatically update for every team member and provide an efficient way to gather our data. 
 
-DB Schema - https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Resources/01-Zip/DB_schema.sql
 
 ![job_cost_data](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1.1-Database%20Tables-job_cost_data.PNG)
 ![current_job_addresses](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1.2-Database%20Tables-current_job_addresses.PNG)
