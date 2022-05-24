@@ -22,7 +22,22 @@ REGRESSION OUTLINE
 		4. USE GET DUMMIES
 		5. can be done in pandas. 
 6. Regress different models and assess output information
-7. Run 'Chow Test' to see if there is a satistically signifcant difference caused by COVID on labor prouctivity. 
-8. Perform analysis based off regression results.  
+ - MODEL 1
+	- Dependent Variable = 'miss' (a binary varaible indicating whether or not a budgeted (selected) speed is within 30% of actual speed
+	- Independent Variable = 'lots' - the number of lots in a subjob
+	- Independent Variable =  'customer_name' - the builder of a project
+	- Independent Variable =  'job_city' - the location of a project
+	- Independent Variable =  'winter' - a binary variable indicating whether the project occurred during the winter months
+	- Independent Variable =  'customer_name' - the builder of a project
+	- Independent Variable =  'department number' - the business unit associated with the job. 
+ - MODEL 2, 3, 4
+ 	- same as above but each dataset will only contain data from one 'department number'
+- Split 80/20 into training and testing sets, respectively. 
+7. Run 'Chow Test' to see if there is a satistically signifcant difference caused by COVID on labor prouctivity.
+	- chowtest(y=df[['y']], X=df[['x']],
+         last_index_in_model_1=15,
+         first_index_in_model_2=16,
+         significance_level=.05)
+8. Generate Confusion Matrix and Summary Support
 
 		
