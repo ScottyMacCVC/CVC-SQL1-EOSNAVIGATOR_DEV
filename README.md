@@ -70,7 +70,7 @@ REGRESSION OUTLINE
 
 ![Query](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/QueryForDataAnalysis.png)
 
-- **Transform** Nulls, blanks, and unnecessary data to be removed to improve functionality. Our team has identified the issues with our dataset. Our Unit of Measurement creates an error because there are many entries that appear to be empty. When we would load the data, the system would tell us _ERROR: extra data after last expected column._ After further review, we discovered this was not a blank and was "   " or several spaces as a string. We replaced all entries in the Unit of Measurement column with "NA" for not applicable. The change allowed the tables to be built and we successfully added all items to the tables. 
+- **Transform** Nulls, blanks, and unnecessary data to be removed to improve functionality. Our team has identified the issues with our dataset. Our Unit of Measurement creates an error because there are many entries that appear to be empty. When we would load the data, the system would tell us _ERROR: extra data after last expected column._ After further review, we discovered this was not a blank and was "   " or several spaces as a string. We replaced all entries in the Unit of Measurement column with "NA" for not applicable. The change allowed the data to import and we successfully added all items to the tables. 
 
 ![1.0-Transform20Data](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1.0-Transform%20Data.PNG)
 ![1.0-Transform%20Data-Image%20of%20MIA%20UofM](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1.0-Transform%20Data-Image%20of%20MIA%20UofM.png)
