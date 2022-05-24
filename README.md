@@ -32,34 +32,7 @@ Note: The descriptions and explanations required in all other project deliverabl
 
 SUPERVISED - CONTINUOUS MODEL (OLS REGRESSION)
 
-```
-REGRESSION OUTLINE
-
-1. Read in file 
-
-2. Test for heterskedasticity in the dependent variables relative to the independent variable.
-	- use Breusch-Pagan
-	- plot each dependent variable for distribution. 
-
-3. Select regression functional form. 
-	1. logit regression
-		a. a binary dependent variable allows for the testing of whether or not a selected labor productivity rate is likely to be met. 
-
-4. Adress Autoregression and suprious correlation.
-	1. Save and plot residuals
-	2. conduct dickey fuller test
-		a - lag the right or left side to compensate based on results of statistical testing
-5. Data treatment
-	1. for machine learning purposes, the follwing categorical data will need to be altered for their application into supervised machine learning
-		1. Job City - Data will be somewhat focused based on selection of geographic area. once filtered, remaining sample will need to be coverted to numeric values.
-		2. Builder - will need to be converted to numeric value
-		3. Completion date - to adjust for seasonal trends, each observation will be grouped into one of two groups indicating winter and not winter
-		4. USE GET DUMMIES
-		5. can be done in pandas. 
-6. Regress different models and assess output information
-7. Run 'Chow Test' to see if there is a satistically signifcant difference caused by COVID on labor prouctivity. https://en.wikipedia.org/wiki/Chow_test
-8. Perform analysis based off regression results.  
-```
+![Regression Steps](Images/regression text.png)
 
 ![Machine Learning Model](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/6-Machine%20Learning%20Model.jpg)
 
@@ -70,7 +43,7 @@ REGRESSION OUTLINE
 
 ![Query](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/QueryForDataAnalysis.png)
 
-- **Transform** Nulls, blanks, and unnecessary data to be removed to improve functionality. Our team has identified the issues with our dataset. Our Unit of Measurement creates an error because there are many entries that appear to be empty. When we would load the data, the system would tell us _ERROR: extra data after last expected column._ After further review, we discovered this was not a blank and was "   " or several spaces as a string. We replaced all entries in the Unit of Measurement column with "NA" for not applicable. The change allowed the data to import and we successfully added all items to the tables. 
+- **Transform** Nulls, blanks, and unnecessary data to be removed to improve functionality. Our team has identified the issues with our dataset. Our Unit of Measurement creates an error because there are many entries that appear to be empty. When we would load the data, the system would tell us _ERROR: extra data after last expected column._ After further review, we discovered this was not a blank and was "   " or several spaces as a string. We replaced all entries in the Unit of Measurement column with "NA" for not applicable. The change allowed the tables to be built and we successfully added all items to the tables. 
 
 ![1.0-Transform20Data](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1.0-Transform%20Data.PNG)
 ![1.0-Transform%20Data-Image%20of%20MIA%20UofM](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1.0-Transform%20Data-Image%20of%20MIA%20UofM.png)
