@@ -32,7 +32,7 @@ Note: The descriptions and explanations required in all other project deliverabl
 
 SUPERVISED - CONTINUOUS MODEL (OLS REGRESSION)
 
-![Regression Steps](Images/regression text.png)
+![Regression Steps](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/regression%20text.png)
 
 ![Machine Learning Model](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/6-Machine%20Learning%20Model.jpg)
 
