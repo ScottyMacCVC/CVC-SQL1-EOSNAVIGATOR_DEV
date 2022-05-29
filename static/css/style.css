@@ -1,0 +1,10 @@
+body {
+
+    color: hsl(0, 11%, 4%);
+  }
+
+  .jumbotron {
+    background-image: url("http://www.cvcconstruction.com/images/header_photo1.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+  }
