@@ -1,21 +1,22 @@
 # CVC-SQL1-EOSNAVIGATOR_DEV
 
+## Exogenous factors and Labor Productivity
 
-# Presentation
+How do external environmental variables, such as weather, geography, the customer, and the size of a project, and most notably COVID, effect the productivity of labor in concrete construction? 
 
-## Sales Point
-Our product is designed provide entry level construction database & reporting to small business concerns. This unique combination of web-based services can afford construction subcontractors the ability to store and use their data to make actionable decisions. Many construction software solutions are targeted at larger General Contractors, Owners, and Builders, but there is an opportunity to provide low-tech-subcontractors a proper way to store and use data generated from thier activities. We would like to help move an entire industry into web-based data storage & analytics. There is a litany of talented construction workers who would like to start a company, but are held back by running the office and their field at the same time. The product would help bring the office to the field by moving the data from a silo'd excel document to a web-based source, making their information systems dynamic enough to deploy in a commercial application. Operations can interact with data in real time instead of waiting on manual reporting methods so commonly employed in the industry.  There will be concern with upgrading to a new software and we need to answer, "How will it affect production?" Our built system would allow our customer to continue their current processes, but built to convert the information into more manageable and usable measurements. With Tableau, we can utilize the data, tell a story about the job's costs, and provide an in-depth view of construction by location.
+Should the presence of winter conditions be expected to result in less output given the same number of inputs?
 
-We also seek to explore the effects of Covid on  labor productivity. The cost of construction and ultimately the house itself, has risen during Covid. The question is, "has the labor productivity rates changed?" We know there is a dollar per hour rise, material dollar per unit have been driven up by supply chain issues, but we have no definitive proof of labor rate changes. Our team will analyze the data for labor productivity trends associated with the Covid time frame.
+Is labor productivity unifrom across all business units?
 
-### Team members have drafted their project, including the following: 
-1. **Selected topic** - Predict a successful outcome for a Labor Productivity input in each of 3 geographic operating divisions (1-Sacramento, 5-Fresno, 6-Reno)
-2. **Reason why we selected our topic** -  To determine the most signifcant factors for predicting labor productivity and utilize model feedback to support efficacy of human generated inputs.
-3. **Description of our source of data** - data exported from source IBM database from 2016 to 2021 for completed projects. (https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/tree/main/Resources/01-Zip).
+Can a particular customer's policies and procedures affect productivity?
 
-**Questions they hope to answer with the data**
- - How do a number of operational conditions affect labor productivity and how significant are are their relative impacts?
- - Given a number of known variables, how likely is a user-defined input for labor productivity to be successful 70% of the time?
+In this analysis we employed various regression techniques to analyze these exogenous variables and their statistical signifcance in affecting labor productivity.  In this instance, productivity is measured as square feet of concrete placed per hour.  This measure of productivity is agnostic to fluctuations in price level which is useful given that these measurements span across time.
+
+Ultimately, are the enterprises systems, procedures and best pratices sufficient to reliably ensure that performance can be expected to be uniform under a variety of differing operating conditions?
+
+
+4. **Description of our source of data** - data exported from source IBM database from 2016 to 2021 for completed projects. (https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/tree/main/Resources/01-Zip).
+
 
 ## GitHub
 ### Main Branch README.md must include: 
