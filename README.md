@@ -1,16 +1,16 @@
 # CVC-SQL1-EOSNAVIGATOR_DEV
 
-## Exogenous factors and Labor Productivity
+## Exogenous Factors and Their Effects on Labor Productivity
 
-How do external environmental variables, such as weather, geography, the customer, and the size of a project, and most notably COVID, effect the productivity of labor in concrete construction? 
+How do external environmental variables, such as weather, geography, the customer, the size of a project, and most notably COVID, effect the productivity of labor in concrete construction? 
 
 Should the presence of winter conditions be expected to result in less output given the same number of inputs?
 
-Is labor productivity unifrom across all business units?
+Is labor productivity uniform across all business units?
 
 Can a particular customer's policies and procedures affect productivity?
 
-In this analysis we employed various regression techniques to analyze these exogenous variables and their statistical signifcance in affecting labor productivity.  In this instance, productivity is measured as square feet of concrete placed per hour.  This measure of productivity is agnostic to fluctuations in price level which is useful given that these measurements span across time.
+In this analysis we employed various regression techniques to analyze these exogenous variables and their statistical signifcance in affecting labor productivity.  Productivity is measured as square feet of concrete placed per hour.  This measure of productivity is agnostic to fluctuations in price level which is useful given that these measurements span across time.
 
 Ultimately, are the enterprises systems, procedures and best pratices sufficient to reliably ensure that performance can be expected to be uniform under a variety of differing operating conditions?
 
