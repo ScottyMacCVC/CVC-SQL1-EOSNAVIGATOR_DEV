@@ -60,3 +60,28 @@ SUPERVISED - CONTINUOUS MODEL (OLS REGRESSION)
 ![AWS Image](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1.4-Database-AWS%20Image.PNG)
 ![AWS Image2](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1.4-Database-AWS%20Image2.png)
 ![AWS Metrics](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/1.4-Database-AWS%20Metrics.png)
+
+## Visualization
+### Tableau Map
+
+Map was created by loading the entire 2016-2021 dataset into Tableau and plotting the map points using the Job City field. The following calculations were then added as tooltips to show when hovering over a map point:
+
+$ Per Hour Calculation
+(SUM([Committed - Total])+SUM([P/O Received/Unapproved])+SUM([Equip/GL]))/(SUM([Hours Other])+SUM([Hours Overtime])+SUM([Hours Regular]))
+
+$ Per Unit
+(SUM([Committed - Total])+SUM([P/O Received/Unapproved])+SUM([Equip/GL]))/SUM([Quantity Actual])
+
+Hours per Lot
+(SUM([Hours Other])+SUM([Hours Overtime])+SUM([Hours Regular]))/SUM([Lots])
+
+Productivity Rate
+SUM([Quantity Budgeted - Cost])/(SUM([Hours Other])+SUM([Hours Overtime])+SUM([Hours Regular]))
+
+SF Cost
+IF [Segment One] = 9 AND [Segment Two] = 20 THEN ([Committed - Total])/{FIXED: SUM([Quantity Actual])} END
+
+### Website
+
+The website was created using basic html and css. The Tableau map was embedded into the website using the code directly from Tableau Public. For the Machine Learning page, our Jupyter notebook was embedded using JupyterLite. 
+
