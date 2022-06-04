@@ -83,5 +83,5 @@ IF [Segment One] = 9 AND [Segment Two] = 20 THEN ([Committed - Total])/{FIXED: S
 
 ### Website
 
-The website was created using basic html and css. The Tableau map was embedded into the website using the code directly from Tableau Public. For the Machine Learning page, our Jupyter notebook was embedded using JupyterLite. 
+The website was created using basic html and css. The Tableau map was embedded into the website using the code directly from the Tableau Public page where our project is saved. For the Machine Learning page, our Jupyter notebook was embedded using JupyterLite, code and instructions found at https://github.com/jupyterlite. 
 
