@@ -81,6 +81,8 @@ SUM([Quantity Budgeted - Cost])/(SUM([Hours Other])+SUM([Hours Overtime])+SUM([H
 SF Cost
 IF [Segment One] = 9 AND [Segment Two] = 20 THEN ([Committed - Total])/{FIXED: SUM([Quantity Actual])} END
 
+![Pre Covid](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/Dashboard%20(Pre-Covid).png?raw=true)
+![Post Covid](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/Dashboard%20(Post-Covid).png?raw=true)
 ### Website
 
 The website was created using basic html and css. The Tableau map was embedded into the website using the code directly from the Tableau Public page where our project is saved. For the Machine Learning page, our Jupyter notebook was embedded using JupyterLite, code and instructions found at https://github.com/jupyterlite. 
