@@ -79,7 +79,7 @@ Productivity Rate
 SUM([Quantity Budgeted - Cost])/(SUM([Hours Other])+SUM([Hours Overtime])+SUM([Hours Regular]))
 
 SF Cost
-IF [Segment One] = 9 AND [Segment Two] = 20 THEN ([Committed - Total])/{FIXED: SUM([Quantity Actual])} END
+([Committed - Total]+[Equip/GL]+[P/O Received/Unapproved])/{FIXED: SUM([Quantity Actual])
 
 ![Pre Covid](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/Dashboard%20(Pre-Covid).png?raw=true)
 ![Post Covid](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/Images/Dashboard%20(Post-Covid).png?raw=true)
